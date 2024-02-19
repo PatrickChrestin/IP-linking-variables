@@ -1,0 +1,770 @@
+vpm2: 234 rows, 378 columns, 917 nonzeros
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 12698 rows, 5274 columns and 36766 nonzeros
+Model fingerprint: 0xcb0294aa
+Variable types: 0 continuous, 5274 integer (5274 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 5292 rows and 0 columns
+Presolve time: 0.09s
+Presolved: 7406 rows, 5274 columns, 30718 nonzeros
+Variable types: 0 continuous, 5274 integer (5274 binary)
+Found heuristic solution: objective 92.0000000
+
+   719   508    0.00000   15 1912   42.00000    0.00000   100%   724   60s
+   785   532    0.29179   17 1960   42.00000    0.00000   100%   758   65s
+   853   585    0.00000   27 1025   42.00000    0.00000   100%   795   71s
+   886   600    0.00000   32  746   42.00000    0.00000   100%   805   75s
+   931   608    0.00036   33 2264   42.00000    0.00000   100%   834   83s
+   981   629    3.71970   33 1668   42.00000    0.00000   100%   846   91s
+  1002   633    0.02479   35 2087   42.00000    0.00000   100%   883  102s
+H 1003   604                      39.0000000    0.00000   100%   882  102s
+  1006   626    0.03725   36 2153   39.00000    0.00000   100%   906  107s
+  1039   627    0.00000    5 1616   39.00000    0.00000   100%   907  123s
+  1041   628    0.02944   13 3295   39.00000    0.00000   100%   906  141s
+  1042   629    8.10707   39 3368   39.00000    0.00000   100%   905  182s
+  1043   630   22.61580   47 3564   39.00000    0.00000   100%   904  193s
+  1044   630   19.28384   33 4628   39.00000    0.00000   100%   903  256s
+  1045   631   30.23333   28 4776   39.00000    0.00000   100%   902  287s
+  1046   632   17.10017   48 4816   39.00000    0.00000   100%   901  355s
+  1047   632   17.54094   38 4822   39.00000    0.00000   100%   900  399s
+  1048   633   32.40000   30 4830   39.00000    0.01104   100%   900  493s
+  1049   634   14.00000   12 4838   39.00000    0.01863   100%   899  520s
+  1050   634   35.00000   29 4840   39.00000    0.32386  99.2%   898  581s
+  1051   635    4.82792   28 4840   39.00000    1.05722  97.3%   897  602s
+  1052   636   16.61204   40 4840   39.00000    1.67703  95.7%   896  646s
+  1053   636    2.91157   17 4840   39.00000    2.91157  92.5%   895  663s
+  1054   637    7.00000   21 4840   39.00000    4.60284  88.2%   894  695s
+  1055   638    9.43393   38 4840   39.00000    6.14567  84.2%   894  711s
+  1056   638    7.34684   32 4840   39.00000    7.34684  81.2%   893  742s
+  1057   639   26.18896   41 4840   39.00000    7.49719  80.8%   892  752s
+  1058   640   16.47532   45 4840   39.00000    8.37585  78.5%   891  787s
+  1059   640    8.37585   20 4840   39.00000    8.37585  78.5%   890  798s
+  1060   641   20.78418   35 4840   39.00000    8.37585  78.5%   889  817s
+  1061   643    8.37585   15 4059   39.00000    8.37585  78.5%  1491  856s
+  1063   642    8.37585   16 3869   39.00000    8.37585  78.5%  1536  865s
+  1065   643    8.37585   17 3475   39.00000    8.37585  78.5%  1562  874s
+  1067   645    8.37585   18 2869   39.00000    8.37585  78.5%  1576  886s
+  1075   642 infeasible   20        39.00000    8.37585  78.5%  1617  892s
+  1079   645    8.37585   20 2879   39.00000    8.37585  78.5%  1626  896s
+  1088   643   19.41249   21 1718   39.00000    8.37585  78.5%  1636  902s
+  1100   639   27.53923   22 1594   39.00000    8.37585  78.5%  1632  906s
+  1129   632     cutoff   26        39.00000    8.37585  78.5%  1602  910s
+  1167   631    8.37585   24 1917   39.00000    8.37585  78.5%  1562  916s
+  1191   620    8.37585   27 2099   39.00000    8.37585  78.5%  1538  920s
+  1222   612    8.37585   27 1624   39.00000    8.37585  78.5%  1511  925s
+  1260   591     cutoff   30        39.00000   11.80086  69.7%  1495  932s
+  1293   581   29.63994   28 1202   39.00000   29.63994  24.0%  1470  935s
+
+Cutting planes:
+  Flow cover: 1
+  Zero half: 7
+  BQP: 370
+
+Explored 1359 nodes (1968872 simplex iterations) in 937.88 seconds (785.46 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 39 42 46 ... 78
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.900000000000e+01, best bound 3.900000000000e+01, gap 0.0000%
+
+Optimaler Zielfunktionswert: 39.00
+
+Variable 1 ist im Block 7 enthalten.
+Variable 2 ist im Block 6 enthalten.
+Variable 3 ist im Block 5 enthalten.
+Variable 4 ist im Block 4 enthalten.
+Variable 5 ist im Block 3 enthalten.
+Variable 6 ist im Block 2 enthalten.
+Variable 7 ist im Block 7 enthalten.
+Variable 8 ist im Block 6 enthalten.
+Variable 9 ist im Block 5 enthalten.
+Variable 10 ist im Block 4 enthalten.
+Variable 11 ist im Block 3 enthalten.
+Variable 12 ist im Block 2 enthalten.
+Variable 13 ist im Block 7 enthalten.
+Variable 14 ist im Block 6 enthalten.
+Variable 15 ist im Block 5 enthalten.
+Variable 16 ist im Block 4 enthalten.
+Variable 17 ist im Block 3 enthalten.
+Variable 18 ist im Block 2 enthalten.
+Variable 19 ist im Block 7 enthalten.
+Variable 20 ist im Block 6 enthalten.
+Variable 21 ist im Block 5 enthalten.
+Variable 22 ist im Block 4 enthalten.
+Variable 23 ist im Block 3 enthalten.
+Variable 24 ist im Block 1 enthalten.
+Variable 24 ist im Block 2 enthalten.
+Variable 24 ist linking.
+Variable 25 ist im Block 7 enthalten.
+Variable 26 ist im Block 6 enthalten.
+Variable 27 ist im Block 5 enthalten.
+Variable 28 ist im Block 4 enthalten.
+Variable 29 ist im Block 3 enthalten.
+Variable 30 ist im Block 2 enthalten.
+Variable 31 ist im Block 7 enthalten.
+Variable 32 ist im Block 6 enthalten.
+Variable 33 ist im Block 5 enthalten.
+Variable 34 ist im Block 4 enthalten.
+Variable 35 ist im Block 3 enthalten.
+Variable 36 ist im Block 2 enthalten.
+Variable 37 ist im Block 7 enthalten.
+Variable 38 ist im Block 6 enthalten.
+Variable 39 ist im Block 5 enthalten.
+Variable 40 ist im Block 4 enthalten.
+Variable 41 ist im Block 3 enthalten.
+Variable 42 ist im Block 2 enthalten.
+Variable 43 ist im Block 7 enthalten.
+Variable 44 ist im Block 6 enthalten.
+Variable 45 ist im Block 5 enthalten.
+Variable 46 ist im Block 4 enthalten.
+Variable 47 ist im Block 3 enthalten.
+Variable 48 ist im Block 2 enthalten.
+Variable 49 ist im Block 7 enthalten.
+Variable 50 ist im Block 6 enthalten.
+Variable 51 ist im Block 5 enthalten.
+Variable 52 ist im Block 4 enthalten.
+Variable 53 ist im Block 3 enthalten.
+Variable 54 ist im Block 2 enthalten.
+Variable 55 ist im Block 7 enthalten.
+Variable 56 ist im Block 6 enthalten.
+Variable 57 ist im Block 5 enthalten.
+Variable 58 ist im Block 4 enthalten.
+Variable 59 ist im Block 3 enthalten.
+Variable 60 ist im Block 2 enthalten.
+Variable 61 ist im Block 7 enthalten.
+Variable 62 ist im Block 6 enthalten.
+Variable 63 ist im Block 5 enthalten.
+Variable 64 ist im Block 4 enthalten.
+Variable 65 ist im Block 3 enthalten.
+Variable 66 ist im Block 2 enthalten.
+Variable 67 ist im Block 7 enthalten.
+Variable 68 ist im Block 6 enthalten.
+Variable 69 ist im Block 5 enthalten.
+Variable 70 ist im Block 4 enthalten.
+Variable 71 ist im Block 3 enthalten.
+Variable 72 ist im Block 2 enthalten.
+Variable 73 ist im Block 7 enthalten.
+Variable 74 ist im Block 6 enthalten.
+Variable 75 ist im Block 5 enthalten.
+Variable 76 ist im Block 4 enthalten.
+Variable 77 ist im Block 3 enthalten.
+Variable 78 ist im Block 2 enthalten.
+Variable 79 ist im Block 7 enthalten.
+Variable 80 ist im Block 6 enthalten.
+Variable 81 ist im Block 5 enthalten.
+Variable 82 ist im Block 4 enthalten.
+Variable 83 ist im Block 3 enthalten.
+Variable 84 ist im Block 2 enthalten.
+Variable 85 ist im Block 7 enthalten.
+Variable 86 ist im Block 6 enthalten.
+Variable 87 ist im Block 5 enthalten.
+Variable 88 ist im Block 4 enthalten.
+Variable 89 ist im Block 3 enthalten.
+Variable 90 ist im Block 2 enthalten.
+Variable 91 ist im Block 7 enthalten.
+Variable 92 ist im Block 6 enthalten.
+Variable 93 ist im Block 5 enthalten.
+Variable 94 ist im Block 4 enthalten.
+Variable 95 ist im Block 3 enthalten.
+Variable 96 ist im Block 2 enthalten.
+Variable 97 ist im Block 7 enthalten.
+Variable 98 ist im Block 6 enthalten.
+Variable 99 ist im Block 5 enthalten.
+Variable 100 ist im Block 4 enthalten.
+Variable 101 ist im Block 3 enthalten.
+Variable 102 ist im Block 2 enthalten.
+Variable 103 ist im Block 7 enthalten.
+Variable 104 ist im Block 6 enthalten.
+Variable 105 ist im Block 5 enthalten.
+Variable 106 ist im Block 4 enthalten.
+Variable 107 ist im Block 3 enthalten.
+Variable 108 ist im Block 2 enthalten.
+Variable 109 ist im Block 7 enthalten.
+Variable 110 ist im Block 6 enthalten.
+Variable 111 ist im Block 5 enthalten.
+Variable 112 ist im Block 4 enthalten.
+Variable 113 ist im Block 3 enthalten.
+Variable 114 ist im Block 2 enthalten.
+Variable 115 ist im Block 7 enthalten.
+Variable 116 ist im Block 6 enthalten.
+Variable 117 ist im Block 5 enthalten.
+Variable 118 ist im Block 4 enthalten.
+Variable 119 ist im Block 3 enthalten.
+Variable 120 ist im Block 2 enthalten.
+Variable 121 ist im Block 7 enthalten.
+Variable 121 ist im Block 8 enthalten.
+Variable 121 ist linking.
+Variable 122 ist im Block 6 enthalten.
+Variable 123 ist im Block 5 enthalten.
+Variable 124 ist im Block 4 enthalten.
+Variable 125 ist im Block 3 enthalten.
+Variable 126 ist im Block 2 enthalten.
+Variable 127 ist im Block 7 enthalten.
+Variable 128 ist im Block 6 enthalten.
+Variable 129 ist im Block 5 enthalten.
+Variable 130 ist im Block 4 enthalten.
+Variable 131 ist im Block 3 enthalten.
+Variable 132 ist im Block 2 enthalten.
+Variable 133 ist im Block 7 enthalten.
+Variable 134 ist im Block 6 enthalten.
+Variable 135 ist im Block 5 enthalten.
+Variable 136 ist im Block 4 enthalten.
+Variable 137 ist im Block 3 enthalten.
+Variable 138 ist im Block 2 enthalten.
+Variable 139 ist im Block 7 enthalten.
+Variable 140 ist im Block 6 enthalten.
+Variable 141 ist im Block 5 enthalten.
+Variable 142 ist im Block 4 enthalten.
+Variable 143 ist im Block 3 enthalten.
+Variable 144 ist im Block 2 enthalten.
+Variable 145 ist im Block 7 enthalten.
+Variable 146 ist im Block 6 enthalten.
+Variable 147 ist im Block 5 enthalten.
+Variable 148 ist im Block 4 enthalten.
+Variable 149 ist im Block 3 enthalten.
+Variable 150 ist im Block 2 enthalten.
+Variable 151 ist im Block 7 enthalten.
+Variable 152 ist im Block 6 enthalten.
+Variable 153 ist im Block 5 enthalten.
+Variable 154 ist im Block 4 enthalten.
+Variable 155 ist im Block 3 enthalten.
+Variable 156 ist im Block 2 enthalten.
+Variable 157 ist im Block 7 enthalten.
+Variable 158 ist im Block 6 enthalten.
+Variable 159 ist im Block 5 enthalten.
+Variable 160 ist im Block 4 enthalten.
+Variable 161 ist im Block 3 enthalten.
+Variable 162 ist im Block 2 enthalten.
+Variable 163 ist im Block 7 enthalten.
+Variable 164 ist im Block 6 enthalten.
+Variable 165 ist im Block 5 enthalten.
+Variable 166 ist im Block 4 enthalten.
+Variable 167 ist im Block 3 enthalten.
+Variable 168 ist im Block 2 enthalten.
+Variable 169 ist im Block 7 enthalten.
+Variable 170 ist im Block 6 enthalten.
+Variable 171 ist im Block 5 enthalten.
+Variable 172 ist im Block 4 enthalten.
+Variable 173 ist im Block 3 enthalten.
+Variable 174 ist im Block 2 enthalten.
+Variable 175 ist im Block 7 enthalten.
+Variable 176 ist im Block 6 enthalten.
+Variable 177 ist im Block 5 enthalten.
+Variable 178 ist im Block 4 enthalten.
+Variable 179 ist im Block 3 enthalten.
+Variable 180 ist im Block 2 enthalten.
+Variable 181 ist im Block 7 enthalten.
+Variable 182 ist im Block 6 enthalten.
+Variable 183 ist im Block 5 enthalten.
+Variable 184 ist im Block 4 enthalten.
+Variable 185 ist im Block 3 enthalten.
+Variable 186 ist im Block 2 enthalten.
+Variable 187 ist im Block 7 enthalten.
+Variable 188 ist im Block 6 enthalten.
+Variable 189 ist im Block 5 enthalten.
+Variable 190 ist im Block 4 enthalten.
+Variable 191 ist im Block 3 enthalten.
+Variable 192 ist im Block 1 enthalten.
+Variable 192 ist im Block 2 enthalten.
+Variable 192 ist linking.
+Variable 193 ist im Block 7 enthalten.
+Variable 194 ist im Block 6 enthalten.
+Variable 195 ist im Block 5 enthalten.
+Variable 196 ist im Block 4 enthalten.
+Variable 197 ist im Block 3 enthalten.
+Variable 198 ist im Block 2 enthalten.
+Variable 199 ist im Block 7 enthalten.
+Variable 200 ist im Block 6 enthalten.
+Variable 201 ist im Block 5 enthalten.
+Variable 202 ist im Block 4 enthalten.
+Variable 203 ist im Block 3 enthalten.
+Variable 204 ist im Block 2 enthalten.
+Variable 205 ist im Block 7 enthalten.
+Variable 206 ist im Block 6 enthalten.
+Variable 207 ist im Block 5 enthalten.
+Variable 208 ist im Block 4 enthalten.
+Variable 209 ist im Block 3 enthalten.
+Variable 210 ist im Block 2 enthalten.
+Variable 211 ist im Block 7 enthalten.
+Variable 212 ist im Block 6 enthalten.
+Variable 213 ist im Block 5 enthalten.
+Variable 214 ist im Block 4 enthalten.
+Variable 215 ist im Block 3 enthalten.
+Variable 216 ist im Block 2 enthalten.
+Variable 217 ist im Block 7 enthalten.
+Variable 218 ist im Block 6 enthalten.
+Variable 219 ist im Block 5 enthalten.
+Variable 220 ist im Block 4 enthalten.
+Variable 221 ist im Block 3 enthalten.
+Variable 222 ist im Block 2 enthalten.
+Variable 223 ist im Block 7 enthalten.
+Variable 224 ist im Block 6 enthalten.
+Variable 225 ist im Block 5 enthalten.
+Variable 226 ist im Block 4 enthalten.
+Variable 227 ist im Block 3 enthalten.
+Variable 228 ist im Block 2 enthalten.
+Variable 229 ist im Block 7 enthalten.
+Variable 230 ist im Block 6 enthalten.
+Variable 231 ist im Block 5 enthalten.
+Variable 232 ist im Block 4 enthalten.
+Variable 233 ist im Block 3 enthalten.
+Variable 234 ist im Block 2 enthalten.
+Variable 235 ist im Block 7 enthalten.
+Variable 236 ist im Block 6 enthalten.
+Variable 237 ist im Block 5 enthalten.
+Variable 238 ist im Block 4 enthalten.
+Variable 239 ist im Block 3 enthalten.
+Variable 240 ist im Block 2 enthalten.
+Variable 241 ist im Block 7 enthalten.
+Variable 242 ist im Block 6 enthalten.
+Variable 243 ist im Block 5 enthalten.
+Variable 244 ist im Block 4 enthalten.
+Variable 245 ist im Block 3 enthalten.
+Variable 246 ist im Block 2 enthalten.
+Variable 247 ist im Block 7 enthalten.
+Variable 248 ist im Block 6 enthalten.
+Variable 249 ist im Block 5 enthalten.
+Variable 250 ist im Block 4 enthalten.
+Variable 251 ist im Block 3 enthalten.
+Variable 252 ist im Block 2 enthalten.
+Variable 253 ist im Block 7 enthalten.
+Variable 254 ist im Block 6 enthalten.
+Variable 255 ist im Block 5 enthalten.
+Variable 256 ist im Block 4 enthalten.
+Variable 257 ist im Block 3 enthalten.
+Variable 258 ist im Block 2 enthalten.
+Variable 259 ist im Block 7 enthalten.
+Variable 260 ist im Block 6 enthalten.
+Variable 261 ist im Block 5 enthalten.
+Variable 262 ist im Block 4 enthalten.
+Variable 263 ist im Block 3 enthalten.
+Variable 264 ist im Block 2 enthalten.
+Variable 265 ist im Block 7 enthalten.
+Variable 266 ist im Block 6 enthalten.
+Variable 267 ist im Block 5 enthalten.
+Variable 268 ist im Block 4 enthalten.
+Variable 269 ist im Block 3 enthalten.
+Variable 270 ist im Block 2 enthalten.
+Variable 271 ist im Block 7 enthalten.
+Variable 272 ist im Block 6 enthalten.
+Variable 273 ist im Block 5 enthalten.
+Variable 274 ist im Block 4 enthalten.
+Variable 275 ist im Block 3 enthalten.
+Variable 276 ist im Block 2 enthalten.
+Variable 277 ist im Block 7 enthalten.
+Variable 278 ist im Block 6 enthalten.
+Variable 279 ist im Block 5 enthalten.
+Variable 280 ist im Block 4 enthalten.
+Variable 281 ist im Block 3 enthalten.
+Variable 282 ist im Block 2 enthalten.
+Variable 283 ist im Block 7 enthalten.
+Variable 284 ist im Block 6 enthalten.
+Variable 285 ist im Block 5 enthalten.
+Variable 286 ist im Block 4 enthalten.
+Variable 287 ist im Block 3 enthalten.
+Variable 288 ist im Block 2 enthalten.
+Variable 289 ist im Block 7 enthalten.
+Variable 289 ist im Block 8 enthalten.
+Variable 289 ist linking.
+Variable 290 ist im Block 6 enthalten.
+Variable 291 ist im Block 5 enthalten.
+Variable 292 ist im Block 4 enthalten.
+Variable 293 ist im Block 3 enthalten.
+Variable 294 ist im Block 2 enthalten.
+Variable 295 ist im Block 7 enthalten.
+Variable 296 ist im Block 6 enthalten.
+Variable 297 ist im Block 5 enthalten.
+Variable 298 ist im Block 4 enthalten.
+Variable 299 ist im Block 3 enthalten.
+Variable 300 ist im Block 2 enthalten.
+Variable 301 ist im Block 7 enthalten.
+Variable 302 ist im Block 6 enthalten.
+Variable 303 ist im Block 5 enthalten.
+Variable 304 ist im Block 4 enthalten.
+Variable 305 ist im Block 3 enthalten.
+Variable 306 ist im Block 2 enthalten.
+Variable 307 ist im Block 7 enthalten.
+Variable 308 ist im Block 6 enthalten.
+Variable 309 ist im Block 5 enthalten.
+Variable 310 ist im Block 4 enthalten.
+Variable 311 ist im Block 3 enthalten.
+Variable 312 ist im Block 2 enthalten.
+Variable 313 ist im Block 7 enthalten.
+Variable 314 ist im Block 6 enthalten.
+Variable 315 ist im Block 5 enthalten.
+Variable 316 ist im Block 4 enthalten.
+Variable 317 ist im Block 3 enthalten.
+Variable 318 ist im Block 2 enthalten.
+Variable 319 ist im Block 7 enthalten.
+Variable 320 ist im Block 6 enthalten.
+Variable 321 ist im Block 5 enthalten.
+Variable 322 ist im Block 4 enthalten.
+Variable 323 ist im Block 3 enthalten.
+Variable 324 ist im Block 2 enthalten.
+Variable 325 ist im Block 7 enthalten.
+Variable 326 ist im Block 6 enthalten.
+Variable 327 ist im Block 5 enthalten.
+Variable 328 ist im Block 4 enthalten.
+Variable 329 ist im Block 3 enthalten.
+Variable 330 ist im Block 2 enthalten.
+Variable 331 ist im Block 7 enthalten.
+Variable 332 ist im Block 6 enthalten.
+Variable 333 ist im Block 5 enthalten.
+Variable 334 ist im Block 4 enthalten.
+Variable 335 ist im Block 3 enthalten.
+Variable 336 ist im Block 2 enthalten.
+Variable 337 ist im Block 6 enthalten.
+Variable 337 ist im Block 7 enthalten.
+Variable 337 ist linking.
+Variable 338 ist im Block 5 enthalten.
+Variable 338 ist im Block 6 enthalten.
+Variable 338 ist linking.
+Variable 339 ist im Block 4 enthalten.
+Variable 339 ist im Block 5 enthalten.
+Variable 339 ist linking.
+Variable 340 ist im Block 3 enthalten.
+Variable 340 ist im Block 4 enthalten.
+Variable 340 ist linking.
+Variable 341 ist im Block 2 enthalten.
+Variable 341 ist im Block 3 enthalten.
+Variable 341 ist linking.
+Variable 342 ist im Block 2 enthalten.
+Variable 343 ist im Block 6 enthalten.
+Variable 343 ist im Block 7 enthalten.
+Variable 343 ist linking.
+Variable 344 ist im Block 5 enthalten.
+Variable 344 ist im Block 6 enthalten.
+Variable 344 ist linking.
+Variable 345 ist im Block 4 enthalten.
+Variable 345 ist im Block 5 enthalten.
+Variable 345 ist linking.
+Variable 346 ist im Block 3 enthalten.
+Variable 346 ist im Block 4 enthalten.
+Variable 346 ist linking.
+Variable 347 ist im Block 2 enthalten.
+Variable 347 ist im Block 3 enthalten.
+Variable 347 ist linking.
+Variable 348 ist im Block 2 enthalten.
+Variable 349 ist im Block 6 enthalten.
+Variable 349 ist im Block 7 enthalten.
+Variable 349 ist linking.
+Variable 350 ist im Block 5 enthalten.
+Variable 350 ist im Block 6 enthalten.
+Variable 350 ist linking.
+Variable 351 ist im Block 4 enthalten.
+Variable 351 ist im Block 5 enthalten.
+Variable 351 ist linking.
+Variable 352 ist im Block 3 enthalten.
+Variable 352 ist im Block 4 enthalten.
+Variable 352 ist linking.
+Variable 353 ist im Block 2 enthalten.
+Variable 353 ist im Block 3 enthalten.
+Variable 353 ist linking.
+Variable 354 ist im Block 2 enthalten.
+Variable 355 ist im Block 6 enthalten.
+Variable 355 ist im Block 7 enthalten.
+Variable 355 ist linking.
+Variable 356 ist im Block 5 enthalten.
+Variable 356 ist im Block 6 enthalten.
+Variable 356 ist linking.
+Variable 357 ist im Block 4 enthalten.
+Variable 357 ist im Block 5 enthalten.
+Variable 357 ist linking.
+Variable 358 ist im Block 3 enthalten.
+Variable 358 ist im Block 4 enthalten.
+Variable 358 ist linking.
+Variable 359 ist im Block 2 enthalten.
+Variable 359 ist im Block 3 enthalten.
+Variable 359 ist linking.
+Variable 360 ist im Block 2 enthalten.
+Variable 361 ist im Block 6 enthalten.
+Variable 361 ist im Block 7 enthalten.
+Variable 361 ist linking.
+Variable 362 ist im Block 5 enthalten.
+Variable 362 ist im Block 6 enthalten.
+Variable 362 ist linking.
+Variable 363 ist im Block 4 enthalten.
+Variable 363 ist im Block 5 enthalten.
+Variable 363 ist linking.
+Variable 364 ist im Block 3 enthalten.
+Variable 364 ist im Block 4 enthalten.
+Variable 364 ist linking.
+Variable 365 ist im Block 2 enthalten.
+Variable 365 ist im Block 3 enthalten.
+Variable 365 ist linking.
+Variable 366 ist im Block 2 enthalten.
+Variable 367 ist im Block 6 enthalten.
+Variable 367 ist im Block 7 enthalten.
+Variable 367 ist linking.
+Variable 368 ist im Block 5 enthalten.
+Variable 368 ist im Block 6 enthalten.
+Variable 368 ist linking.
+Variable 369 ist im Block 4 enthalten.
+Variable 369 ist im Block 5 enthalten.
+Variable 369 ist linking.
+Variable 370 ist im Block 3 enthalten.
+Variable 370 ist im Block 4 enthalten.
+Variable 370 ist linking.
+Variable 371 ist im Block 2 enthalten.
+Variable 371 ist im Block 3 enthalten.
+Variable 371 ist linking.
+Variable 372 ist im Block 2 enthalten.
+Variable 373 ist im Block 6 enthalten.
+Variable 373 ist im Block 7 enthalten.
+Variable 373 ist linking.
+Variable 374 ist im Block 5 enthalten.
+Variable 374 ist im Block 6 enthalten.
+Variable 374 ist linking.
+Variable 375 ist im Block 4 enthalten.
+Variable 375 ist im Block 5 enthalten.
+Variable 375 ist linking.
+Variable 376 ist im Block 3 enthalten.
+Variable 376 ist im Block 4 enthalten.
+Variable 376 ist linking.
+Variable 377 ist im Block 2 enthalten.
+Variable 377 ist im Block 3 enthalten.
+Variable 377 ist linking.
+Variable 378 ist im Block 2 enthalten.
+Row 1 ist im Block 6 enthalten.
+Row 2 ist im Block 5 enthalten.
+Row 3 ist im Block 4 enthalten.
+Row 4 ist im Block 3 enthalten.
+Row 5 ist im Block 2 enthalten.
+Row 6 ist im Block 6 enthalten.
+Row 7 ist im Block 5 enthalten.
+Row 8 ist im Block 4 enthalten.
+Row 9 ist im Block 3 enthalten.
+Row 10 ist im Block 2 enthalten.
+Row 11 ist im Block 6 enthalten.
+Row 12 ist im Block 5 enthalten.
+Row 13 ist im Block 4 enthalten.
+Row 14 ist im Block 3 enthalten.
+Row 15 ist im Block 2 enthalten.
+Row 16 ist im Block 6 enthalten.
+Row 17 ist im Block 5 enthalten.
+Row 18 ist im Block 4 enthalten.
+Row 19 ist im Block 3 enthalten.
+Row 20 ist im Block 2 enthalten.
+Row 21 ist im Block 6 enthalten.
+Row 22 ist im Block 5 enthalten.
+Row 23 ist im Block 4 enthalten.
+Row 24 ist im Block 3 enthalten.
+Row 25 ist im Block 2 enthalten.
+Row 26 ist im Block 6 enthalten.
+Row 27 ist im Block 5 enthalten.
+Row 28 ist im Block 4 enthalten.
+Row 29 ist im Block 3 enthalten.
+Row 30 ist im Block 2 enthalten.
+Row 31 ist im Block 6 enthalten.
+Row 32 ist im Block 5 enthalten.
+Row 33 ist im Block 4 enthalten.
+Row 34 ist im Block 3 enthalten.
+Row 35 ist im Block 2 enthalten.
+Row 36 ist im Block 7 enthalten.
+Row 37 ist im Block 7 enthalten.
+Row 38 ist im Block 7 enthalten.
+Row 39 ist im Block 7 enthalten.
+Row 40 ist im Block 7 enthalten.
+Row 41 ist im Block 7 enthalten.
+Row 42 ist im Block 7 enthalten.
+Row 43 ist im Block 7 enthalten.
+Row 44 ist im Block 6 enthalten.
+Row 45 ist im Block 5 enthalten.
+Row 46 ist im Block 4 enthalten.
+Row 47 ist im Block 3 enthalten.
+Row 48 ist im Block 2 enthalten.
+Row 49 ist im Block 7 enthalten.
+Row 50 ist im Block 6 enthalten.
+Row 51 ist im Block 5 enthalten.
+Row 52 ist im Block 4 enthalten.
+Row 53 ist im Block 3 enthalten.
+Row 54 ist im Block 2 enthalten.
+Row 55 ist im Block 7 enthalten.
+Row 56 ist im Block 6 enthalten.
+Row 57 ist im Block 5 enthalten.
+Row 58 ist im Block 4 enthalten.
+Row 59 ist im Block 3 enthalten.
+Row 60 ist im Block 2 enthalten.
+Row 61 ist im Block 7 enthalten.
+Row 62 ist im Block 6 enthalten.
+Row 63 ist im Block 5 enthalten.
+Row 64 ist im Block 4 enthalten.
+Row 65 ist im Block 3 enthalten.
+Row 66 ist im Block 2 enthalten.
+Row 67 ist im Block 7 enthalten.
+Row 68 ist im Block 6 enthalten.
+Row 69 ist im Block 5 enthalten.
+Row 70 ist im Block 4 enthalten.
+Row 71 ist im Block 3 enthalten.
+Row 72 ist im Block 2 enthalten.
+Row 73 ist im Block 7 enthalten.
+Row 74 ist im Block 6 enthalten.
+Row 75 ist im Block 5 enthalten.
+Row 76 ist im Block 4 enthalten.
+Row 77 ist im Block 3 enthalten.
+Row 78 ist im Block 2 enthalten.
+Row 79 ist im Block 7 enthalten.
+Row 80 ist im Block 6 enthalten.
+Row 81 ist im Block 5 enthalten.
+Row 82 ist im Block 4 enthalten.
+Row 83 ist im Block 3 enthalten.
+Row 84 ist im Block 2 enthalten.
+Row 85 ist im Block 7 enthalten.
+Row 86 ist im Block 6 enthalten.
+Row 87 ist im Block 5 enthalten.
+Row 88 ist im Block 4 enthalten.
+Row 89 ist im Block 3 enthalten.
+Row 90 ist im Block 1 enthalten.
+Row 91 ist im Block 7 enthalten.
+Row 92 ist im Block 6 enthalten.
+Row 93 ist im Block 5 enthalten.
+Row 94 ist im Block 4 enthalten.
+Row 95 ist im Block 3 enthalten.
+Row 96 ist im Block 2 enthalten.
+Row 97 ist im Block 7 enthalten.
+Row 98 ist im Block 6 enthalten.
+Row 99 ist im Block 5 enthalten.
+Row 100 ist im Block 4 enthalten.
+Row 101 ist im Block 3 enthalten.
+Row 102 ist im Block 2 enthalten.
+Row 103 ist im Block 7 enthalten.
+Row 104 ist im Block 6 enthalten.
+Row 105 ist im Block 5 enthalten.
+Row 106 ist im Block 4 enthalten.
+Row 107 ist im Block 3 enthalten.
+Row 108 ist im Block 2 enthalten.
+Row 109 ist im Block 7 enthalten.
+Row 110 ist im Block 6 enthalten.
+Row 111 ist im Block 5 enthalten.
+Row 112 ist im Block 4 enthalten.
+Row 113 ist im Block 3 enthalten.
+Row 114 ist im Block 2 enthalten.
+Row 115 ist im Block 7 enthalten.
+Row 116 ist im Block 6 enthalten.
+Row 117 ist im Block 5 enthalten.
+Row 118 ist im Block 4 enthalten.
+Row 119 ist im Block 3 enthalten.
+Row 120 ist im Block 2 enthalten.
+Row 121 ist im Block 7 enthalten.
+Row 122 ist im Block 6 enthalten.
+Row 123 ist im Block 5 enthalten.
+Row 124 ist im Block 4 enthalten.
+Row 125 ist im Block 3 enthalten.
+Row 126 ist im Block 2 enthalten.
+Row 127 ist im Block 7 enthalten.
+Row 128 ist im Block 6 enthalten.
+Row 129 ist im Block 5 enthalten.
+Row 130 ist im Block 4 enthalten.
+Row 131 ist im Block 3 enthalten.
+Row 132 ist im Block 2 enthalten.
+Row 133 ist im Block 7 enthalten.
+Row 134 ist im Block 6 enthalten.
+Row 135 ist im Block 5 enthalten.
+Row 136 ist im Block 4 enthalten.
+Row 137 ist im Block 3 enthalten.
+Row 138 ist im Block 2 enthalten.
+Row 139 ist im Block 7 enthalten.
+Row 140 ist im Block 6 enthalten.
+Row 141 ist im Block 5 enthalten.
+Row 142 ist im Block 4 enthalten.
+Row 143 ist im Block 3 enthalten.
+Row 144 ist im Block 2 enthalten.
+Row 145 ist im Block 7 enthalten.
+Row 146 ist im Block 6 enthalten.
+Row 147 ist im Block 5 enthalten.
+Row 148 ist im Block 4 enthalten.
+Row 149 ist im Block 3 enthalten.
+Row 150 ist im Block 2 enthalten.
+Row 151 ist im Block 7 enthalten.
+Row 152 ist im Block 6 enthalten.
+Row 153 ist im Block 5 enthalten.
+Row 154 ist im Block 4 enthalten.
+Row 155 ist im Block 3 enthalten.
+Row 156 ist im Block 2 enthalten.
+Row 157 ist im Block 7 enthalten.
+Row 158 ist im Block 6 enthalten.
+Row 159 ist im Block 5 enthalten.
+Row 160 ist im Block 4 enthalten.
+Row 161 ist im Block 3 enthalten.
+Row 162 ist im Block 2 enthalten.
+Row 163 ist im Block 7 enthalten.
+Row 164 ist im Block 6 enthalten.
+Row 165 ist im Block 5 enthalten.
+Row 166 ist im Block 4 enthalten.
+Row 167 ist im Block 3 enthalten.
+Row 168 ist im Block 2 enthalten.
+Row 169 ist im Block 7 enthalten.
+Row 170 ist im Block 6 enthalten.
+Row 171 ist im Block 5 enthalten.
+Row 172 ist im Block 4 enthalten.
+Row 173 ist im Block 3 enthalten.
+Row 174 ist im Block 2 enthalten.
+Row 175 ist im Block 7 enthalten.
+Row 176 ist im Block 6 enthalten.
+Row 177 ist im Block 5 enthalten.
+Row 178 ist im Block 4 enthalten.
+Row 179 ist im Block 3 enthalten.
+Row 180 ist im Block 2 enthalten.
+Row 181 ist im Block 7 enthalten.
+Row 182 ist im Block 6 enthalten.
+Row 183 ist im Block 5 enthalten.
+Row 184 ist im Block 4 enthalten.
+Row 185 ist im Block 3 enthalten.
+Row 186 ist im Block 2 enthalten.
+Row 187 ist im Block 8 enthalten.
+Row 188 ist im Block 6 enthalten.
+Row 189 ist im Block 5 enthalten.
+Row 190 ist im Block 4 enthalten.
+Row 191 ist im Block 3 enthalten.
+Row 192 ist im Block 2 enthalten.
+Row 193 ist im Block 7 enthalten.
+Row 194 ist im Block 6 enthalten.
+Row 195 ist im Block 5 enthalten.
+Row 196 ist im Block 4 enthalten.
+Row 197 ist im Block 3 enthalten.
+Row 198 ist im Block 2 enthalten.
+Row 199 ist im Block 7 enthalten.
+Row 200 ist im Block 6 enthalten.
+Row 201 ist im Block 5 enthalten.
+Row 202 ist im Block 4 enthalten.
+Row 203 ist im Block 3 enthalten.
+Row 204 ist im Block 2 enthalten.
+Row 205 ist im Block 7 enthalten.
+Row 206 ist im Block 6 enthalten.
+Row 207 ist im Block 5 enthalten.
+Row 208 ist im Block 4 enthalten.
+Row 209 ist im Block 3 enthalten.
+Row 210 ist im Block 2 enthalten.
+Row 211 ist im Block 7 enthalten.
+Row 212 ist im Block 6 enthalten.
+Row 213 ist im Block 5 enthalten.
+Row 214 ist im Block 4 enthalten.
+Row 215 ist im Block 3 enthalten.
+Row 216 ist im Block 2 enthalten.
+Row 217 ist im Block 7 enthalten.
+Row 218 ist im Block 6 enthalten.
+Row 219 ist im Block 5 enthalten.
+Row 220 ist im Block 4 enthalten.
+Row 221 ist im Block 3 enthalten.
+Row 222 ist im Block 2 enthalten.
+Row 223 ist im Block 7 enthalten.
+Row 224 ist im Block 6 enthalten.
+Row 225 ist im Block 5 enthalten.
+Row 226 ist im Block 4 enthalten.
+Row 227 ist im Block 3 enthalten.
+Row 228 ist im Block 2 enthalten.
+Row 229 ist im Block 7 enthalten.
+Row 230 ist im Block 6 enthalten.
+Row 231 ist im Block 5 enthalten.
+Row 232 ist im Block 4 enthalten.
+Row 233 ist im Block 3 enthalten.
+Row 234 ist im Block 2 enthalten.

@@ -1,0 +1,12 @@
+\ Model staircasedetection_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ R588: y_211_1 + y_211_2 = 1
+ R824: - x_145_1 + x_313_1 - 2 y_211_1 >= 0
+ R1058: - x_145_2 + x_313_2 - 2 y_211_2 >= 0
+Bounds
+Binaries
+ x_145_1 x_313_1 y_211_1 x_145_2 x_313_2 y_211_2
+End
