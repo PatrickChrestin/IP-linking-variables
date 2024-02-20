@@ -50,8 +50,12 @@ def solve(N, M, k, coef_matrix, r_sum, visualization = False):
 
     model.optimize()
 
+    runtime = model.Runtime
+    opt = -1
     # Ausgabe der Loesung.
     if model.status == GRB.OPTIMAL:
+        runtime = model.Runtime
+        opt = model.ObjVal
         if visualization:
             # initialize dicts
             for i in range(1,k):
@@ -88,4 +92,4 @@ def solve(N, M, k, coef_matrix, r_sum, visualization = False):
     else:
         print(f"Keine Optimalloesung gefunden. Status {model.status}")
         
-    return model, sorted_vars, sorted_constraints
+    return model, opt, sorted_vars, sorted_constraints, runtime
